@@ -5,4 +5,26 @@ module.exports = buildEngine({
   lazyLoading: {
     enabled: false,
   },
+
+  setupPreprocessorRegistry(type, registry) {
+    registry.add('htmlbars-ast-plugin', {
+      name: 'do-nothing-template-compiler',
+      ext: 'hbs',
+      plugin: () => {
+        return templateCompiler();
+      },
+      baseDir() {
+        return __dirname;
+      },
+    });
+  },
 });
+
+function templateCompiler() {
+  return {
+    name: 'do-nothing-template-compiler',
+    visitor: {
+      ElementNode() {},
+    },
+  };
+}

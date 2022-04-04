@@ -28,12 +28,7 @@
   },
   "dependencies": {
     "ember-cli-babel": "^7.26.11",
-    "ember-cli-htmlbars": "^6.0.1",
-    "@html-next/flexi-dsl": "^3.0.0-alpha.0",
-    "@html-next/flexi-layouts": "^3.0.0-alpha.0",
-    "@html-next/flexi-sustain": "^3.0.0-alpha.0",
-    "@html-next/flexi-default-styles": "^3.0.0-alpha.0",
-    "@html-next/flexi-config": "^3.0.0-alpha.0"
+    "ember-cli-htmlbars": "^6.0.1"
   },
   "peerDependencies": {
     "ember-engines": "^0.8.20"
